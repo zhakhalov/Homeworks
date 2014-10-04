@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="currencyRateModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="currencyRateEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Currency" EntityType="currencyRateModel.Currency" />
+    <EntitySet Name="Rate" EntityType="currencyRateModel.Rate" />
+    <EntitySet Name="Reference" EntityType="currencyRateModel.Reference" />
+    <AssociationSet Name="fk_Rate_CurrencyId_Currency_Id" Association="currencyRateModel.fk_Rate_CurrencyId_Currency_Id">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Rate" EntitySet="Rate" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Reference_CurrencyId_Currency_Id" Association="currencyRateModel.fk_Reference_CurrencyId_Currency_Id">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Reference" EntitySet="Reference" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Rate" Relationship="currencyRateModel.fk_Rate_CurrencyId_Currency_Id" FromRole="Currency" ToRole="Rate" />
+    <NavigationProperty Name="Reference" Relationship="currencyRateModel.fk_Reference_CurrencyId_Currency_Id" FromRole="Currency" ToRole="Reference" />
+  </EntityType>
+  <EntityType Name="Rate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CurrencyId" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="Decimal" Nullable="false" Precision="16" Scale="4" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Currency" Relationship="currencyRateModel.fk_Rate_CurrencyId_Currency_Id" FromRole="Rate" ToRole="Currency" />
+  </EntityType>
+  <EntityType Name="Reference">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CurrencyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Currency" Relationship="currencyRateModel.fk_Reference_CurrencyId_Currency_Id" FromRole="Reference" ToRole="Currency" />
+  </EntityType>
+  <Association Name="fk_Rate_CurrencyId_Currency_Id">
+    <End Role="Currency" Type="currencyRateModel.Currency" Multiplicity="1" />
+    <End Role="Rate" Type="currencyRateModel.Rate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Reference_CurrencyId_Currency_Id">
+    <End Role="Currency" Type="currencyRateModel.Currency" Multiplicity="1" />
+    <End Role="Reference" Type="currencyRateModel.Reference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reference">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,12 @@
+F:\VS2012_Projects\CS\CS.Repository\obj\Debug\CS.Repository.csprojResolveAssemblyReference.cache
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\CS.Repository.dll.config
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\CS.Repository.dll
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\CS.Repository.pdb
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\CS.Entities.dll
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\EntityFramework.dll
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\EntityFramework.SqlServer.dll
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\CS.Entities.pdb
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\EntityFramework.xml
+F:\VS2012_Projects\CS\CS.Repository\bin\Debug\EntityFramework.SqlServer.xml
+F:\VS2012_Projects\CS\CS.Repository\obj\Debug\CS.Repository.dll
+F:\VS2012_Projects\CS\CS.Repository\obj\Debug\CS.Repository.pdb

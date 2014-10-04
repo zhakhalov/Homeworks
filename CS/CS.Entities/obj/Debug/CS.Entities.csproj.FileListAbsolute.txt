@@ -1,0 +1,8 @@
+F:\VS2012_Projects\CS\CS.Entities\bin\Debug\CS.Entities.dll.config
+F:\VS2012_Projects\CS\CS.Entities\bin\Debug\CS.Entities.dll
+F:\VS2012_Projects\CS\CS.Entities\bin\Debug\CS.Entities.pdb
+F:\VS2012_Projects\CS\CS.Entities\bin\Debug\EntityFramework.dll
+F:\VS2012_Projects\CS\CS.Entities\bin\Debug\EntityFramework.xml
+F:\VS2012_Projects\CS\CS.Entities\obj\Debug\CS.Entities.csprojResolveAssemblyReference.cache
+F:\VS2012_Projects\CS\CS.Entities\obj\Debug\CS.Entities.dll
+F:\VS2012_Projects\CS\CS.Entities\obj\Debug\CS.Entities.pdb

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\apps\CurrencyService</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CS.Entities.dll">
+      <publishTime>09/23/2014 22:12:51</publishTime>
+    </File>
+    <File Include="bin/CS.Entities.pdb">
+      <publishTime>09/23/2014 22:12:51</publishTime>
+    </File>
+    <File Include="bin/CS.Repository.dll">
+      <publishTime>09/28/2014 10:19:07</publishTime>
+    </File>
+    <File Include="bin/CS.Repository.pdb">
+      <publishTime>09/28/2014 10:19:07</publishTime>
+    </File>
+    <File Include="bin/CS.Service.dll">
+      <publishTime>09/28/2014 10:19:09</publishTime>
+    </File>
+    <File Include="bin/CS.Service.pdb">
+      <publishTime>09/28/2014 10:19:09</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/27/2014 20:43:55</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>09/27/2014 20:43:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>09/23/2014 22:18:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>09/23/2014 22:18:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.RegistrationByConvention.dll">
+      <publishTime>09/23/2014 22:18:28</publishTime>
+    </File>
+    <File Include="CurrencyService.svc">
+      <publishTime>09/23/2014 22:19:11</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/27/2014 20:43:57</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/27/2014 20:48:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

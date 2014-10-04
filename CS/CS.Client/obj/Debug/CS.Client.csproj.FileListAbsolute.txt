@@ -1,0 +1,12 @@
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\CS.Client.dll
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\CS.Client.pdb
+F:\VS2012_Projects\CS\CS.Client\obj\Debug\CS.Client.csprojResolveAssemblyReference.cache
+F:\VS2012_Projects\CS\CS.Client\obj\Debug\CS.Client.dll
+F:\VS2012_Projects\CS\CS.Client\obj\Debug\CS.Client.pdb
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\CS.Client.dll.config
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\Nito.AsyncEx.Concurrent.dll
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\Nito.AsyncEx.dll
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\Nito.AsyncEx.xml
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\Nito.AsyncEx.Concurrent.xml
+F:\VS2012_Projects\CS\CS.Client\bin\Debug\Nito.AsyncEx.Enlightenment.xml

@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="CS.WpfPresentation.Views.ChartView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:c="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Grid>
+
+        <StackPanel>
+            <DockPanel>
+                <WrapPanel>
+                    <TextBlock Text="Source Currency :" Margin="5" VerticalAlignment="Center"/>
+                    <ComboBox  Margin="5" MinWidth="75" 
+                               ItemsSource="{Binding Path=AvailableSourceCurrencies, Mode=OneWay}" 
+                               DisplayMemberPath="Code"
+                               SelectedItem="{Binding Path=SelectedSourceCurrency, Mode=TwoWay}"/>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Right">
+                    <TextBlock Text="Target Currency :" Margin="5" VerticalAlignment="Center"/>
+                    <ComboBox   Margin="5" MinWidth="75" 
+                               ItemsSource="{Binding Path=AvailableTargetCurrencies, Mode=OneWay}" 
+                               DisplayMemberPath="Code"
+                               SelectedItem="{Binding Path=SelectedTargetCurrency, Mode=TwoWay}"/>
+                </WrapPanel>
+            </DockPanel>
+            <DockPanel>
+                <WrapPanel>
+                    <TextBlock Text="Start date:" Margin="5" VerticalAlignment="Center"/>
+                    <DatePicker Margin="5" IsEnabled="{Binding Path=IsReady}"
+                                DisplayDateStart="{Binding Path=CurrencyStartDate, Mode=OneWay}"
+                                DisplayDateEnd="{Binding Path=SelectedEndDate, Mode=OneWay}"
+                                SelectedDate="{Binding Path=SelectedStartDate, Mode=TwoWay}"/>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Right">
+                    <TextBlock Text="End date:" Margin="5" VerticalAlignment="Center"/>
+                    <DatePicker Margin="5" IsEnabled="{Binding Path=IsReady}"
+                                    DisplayDateStart="{Binding Path=SelectedStartDate, Mode=OneWay}"
+                                    DisplayDateEnd="{Binding Path=CurrencyEndDate, Mode=OneWay}"
+                                    SelectedDate="{Binding Path=SelectedEndDate, Mode=TwoWay}"/>
+                </WrapPanel>
+            </DockPanel>
+            <StackPanel>
+                <TextBlock Text="Rate chart" Margin="5" />
+                <c:Chart MinHeight="200">
+                    <c:LineSeries Title="{Binding Path=Direction, Mode=OneWay}"
+                                      ItemsSource="{Binding Path=Values, Mode=OneWay}"
+                                      IndependentValuePath="Timestamp"
+                                      DependentValuePath="Value"/>
+                </c:Chart>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
