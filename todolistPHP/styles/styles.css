@@ -1,0 +1,84 @@
+body{
+    align-content: center;
+    background: #333333;
+}
+
+header, .task-list {
+    width: 90%;
+    min-width: 320px;
+    margin: 5px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b3b3b3;
+    border-radius: 10px;
+}
+
+.filter{
+    margin: 5px;
+}
+
+.update-sucsess {
+    font-weight: bold;
+    color: #46a546;
+}
+
+.update-error {
+    font-weight: bold;
+    color: #c43c35;
+}
+
+.task-list input, .task-list textarea {
+    width: 100%;
+    margin: 5px;
+}
+
+.task-list input {
+    height: 30px;
+}
+
+.todo-add {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 5px;
+    padding: 10px;
+}
+
+.todo-task {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 5px;
+    padding: 10px;
+}
+
+.todo-done{
+    text-decoration: line-through;
+}
+
+.todo-task-content {
+    margin: 10px;
+}
+
+.todo-task-buttons{
+}
+
+.task-list input[type="button"] {
+    margin: 5px;
+}
+
+.todo-task-content > .task-header {
+    font-weight: bold;
+}
+
+.todo-task-content > .task-date {
+    font-size: small;
+    font-style: italic;
+}
+
+.todo-task-content > .task-description {
+    font-size: smaller;
+}
+
+h3, h4 {
+    text-align: center;
+}
