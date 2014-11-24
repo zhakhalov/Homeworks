@@ -1,11 +1,13 @@
 <div class="tint">
-    <div class="task-list">
-        <h4>Add new task.</h4>
-        <div iaskd="add-task" class="todo-add">
+    <div class="task-list center">
+        <div id="add-task" class="todo-add">
+            <b>Update task:</b>
             <input type="text" placeholder="Title" class="txt-title"/>
             <textarea placeholder="Descrtipion" class="txt-desc"></textarea>
-            <input type="text" placeholder="Due Date (dd/mm/yyyy)" id="txt-date"/>
-            <button class="btn btn-success" class="btn-add">Add Task</button>
+            <input type="text" placeholder="Due Date (dd/mm/yyyy)" class="txt-date"/>
+            <p><input type="checkbox" class="chb-done"/> Done </p>
+            <button class="btn btn-success accept">Update Task</button>
+            <button class="btn decline">Cancel</button>
         </div>
     </div>
 </div>

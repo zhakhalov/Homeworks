@@ -91,11 +91,10 @@ class TaskRepository implements ITaskRepository{
     function updateTask($task){
         $this->createConnection();
         mysql_query(SqlHelper::getUpdateSql($task));
-        $this->lastInsert = mysql_insert_id();
         $this->errorCode = mysql_errno($this->connection);
         $this->killConnection();
 
-        return $this->lastInsert;
+        return $this->errorCode;
     }
 
     function removeTask($id){

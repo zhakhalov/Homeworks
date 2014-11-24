@@ -2,20 +2,24 @@
     <head>
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
         <link href="styles/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="styles/jquery-ui.css" rel="stylesheet" type="text/css">
         <script src="scripts/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="scripts/jquery-ui-1.11.2.js"></script>
         <script src="scripts/script.js" type="text/javascript"></script>
     </head>
     <body>
         <header>
-            <h3>TODO-List</h3>
+            <div class="todo-task">
+                <h3>TODO-List</h3>
+            </div>
         </header>
         <div class="task-list">
-            <h4>Add new task.</h4>
-            <div iaskd="add-task" class="todo-add">
+            <div id="add-task" class="todo-add">
+                <b>Add new task:</b>
                 <input type="text" placeholder="Title" class="txt-title"/>
                 <textarea placeholder="Descrtipion" class="txt-desc"></textarea>
-                <input type="text" placeholder="Due Date (dd/mm/yyyy)" id="txt-date"/>
-                <button class="btn btn-success" class="btn-add">Add Task</button>
+                <input type="text" placeholder="Due Date (dd/mm/yyyy)" class="txt-date"/>
+                <button class="btn btn-success btn-add">Add Task</button>
             </div>
         </div>
         <div class="task-list">

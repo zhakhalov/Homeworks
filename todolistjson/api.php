@@ -14,6 +14,7 @@ $issetFilterOption = isset($_POST['options']);
 $issetTasks = isset($_POST['tasks']);
 $issetAdd = isset($_POST['add']);
 $issetDelete = isset($_POST['delete']);
+$issetUpdate = isset($_POST['update']);
 
 if ($issetTasks){
     $tasks = $_POST['tasks'];
@@ -24,7 +25,9 @@ if ($issetAdd){
 if ($issetDelete){
     $deleteId = $_POST['delete'];
 }
-
+if ($issetUpdate){
+    $update = $_POST['update'];
+}
 
 // vars --------------------------------------------------------------------------------------------------------
 
@@ -59,13 +62,24 @@ if ($issetFilterOption) {
     $task = new Task();
     $task->title = $add['title'];
     $task->description = $add['description'];
-    $task->dueDate = $add['dueData'];
+    $task->dueDate = $add['dueDate'];
     $task->isDone = 0;
 
     echo(json_encode(['id' => $taskRepository->addTask($task)]));
 
+} else if ($issetUpdate){
+    $task = new Task();
+    $task->id = $update['id'];
+    $task->title = $update['title'];
+    $task->description = $update['description'];
+    $task->dueDate = $update['dueDate'];
+    $task->isDone = $update['isDone'];
+
+    $taskRepository->updateTask($task);
+
+    echo(json_encode($task));
 } else if($issetDelete) {
 
-    echo(json_encode(['success' => $taskRepository->removeTask($deleteId)]));
+    echo(json_encode(['success' => $taskRepository->removeTask($deleteId), 'id' => $deleteId]));
 
 }
