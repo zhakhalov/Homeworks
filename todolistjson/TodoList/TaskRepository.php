@@ -20,6 +20,11 @@ class TaskRepository implements ITaskRepository{
 
     private $connection;
 
+    // public variables ------------------------------------------------------------------------------------------------
+
+    public $lastInsert;
+    public $errorCode;
+
     // constructor -----------------------------------------------------------------------------------------------------
 
     function __construct($dbhost, $dbname, $dbuser, $dbpass){
@@ -74,12 +79,23 @@ class TaskRepository implements ITaskRepository{
     }
 
     function addTask($task){
+        $this->createConnection();
+        mysql_query(SqlHelper::getInsertSql($task));
+        $this->lastInsert = mysql_insert_id();
+        $this->errorCode = mysql_errno($this->connection);
+        $this->killConnection();
 
-        return $this->setTask(SqlHelper::getInsertSql($task));
+        return $this->lastInsert;
     }
 
     function updateTask($task){
-        return $this->setTask(SqlHelper::getUpdateSql($task));
+        $this->createConnection();
+        mysql_query(SqlHelper::getUpdateSql($task));
+        $this->lastInsert = mysql_insert_id();
+        $this->errorCode = mysql_errno($this->connection);
+        $this->killConnection();
+
+        return $this->lastInsert;
     }
 
     function removeTask($id){
@@ -109,20 +125,6 @@ class TaskRepository implements ITaskRepository{
 
     private function killConnection(){
         mysql_close($this->connection);
-    }
-
-    private function setTask($sql){
-        $this->createConnection();
-
-        $sql =
-
-        mysql_query($sql);
-
-        $sqlError = mysql_errno($this->connection);
-
-        $this->killConnection();
-
-        return 0 == $sqlError;
     }
 
     private function getTasks($sql){

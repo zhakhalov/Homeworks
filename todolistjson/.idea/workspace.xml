@@ -26,7 +26,7 @@
       <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="23" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" vertical-offset="910" max-vertical-offset="1598">
+            <state line="50" column="18" selection-start="744" selection-end="744" vertical-scroll-proportion="4.32" vertical-offset="958" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -35,25 +35,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="54" selection-start="900" selection-end="900" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="680">
+            <state line="4" column="83" selection-start="250" selection-end="250" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="42" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+            <state line="35" column="55" selection-start="1263" selection-end="1263" vertical-scroll-proportion="-0.45714286" vertical-offset="867" max-vertical-offset="1462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tasklist.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/tasklist.js">
+      <file leaf-file-name="delete.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blank/delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="33" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+            <state line="3" column="107" selection-start="193" selection-end="193" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="238">
               <folding />
             </state>
           </provider>
@@ -62,28 +62,19 @@
       <file leaf-file-name="TaskRepository.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TodoList/TaskRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="15" selection-start="308" selection-end="308" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="2669">
+            <state line="99" column="0" selection-start="2796" selection-end="2796" vertical-scroll-proportion="-18.923077" vertical-offset="1191" max-vertical-offset="2703">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="582" selection-end="582" vertical-scroll-proportion="0.112794615" vertical-offset="188" max-vertical-offset="782">
+            <state line="45" column="31" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-1.9230769" vertical-offset="715" max-vertical-offset="1309">
               <folding>
                 <element signature="e#200#218#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blank/task.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="36" selection-start="164" selection-end="175" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="272">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -106,19 +97,21 @@
         <option value="$PROJECT_DIR$/TodoList/SqlHelper.php" />
         <option value="$PROJECT_DIR$/TodoList/ITaskRepository.php" />
         <option value="$PROJECT_DIR$/delete.php" />
-        <option value="$PROJECT_DIR$/scripts/delete.js" />
-        <option value="$PROJECT_DIR$/scripts/update.js" />
         <option value="$PROJECT_DIR$/update.php" />
         <option value="$PROJECT_DIR$/blank/update.php" />
-        <option value="$PROJECT_DIR$/blank/update.html" />
         <option value="$PROJECT_DIR$/scripts/jquery.tools.min.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/blank/task.html" />
+        <option value="$PROJECT_DIR$/scripts/tasklist.js" />
         <option value="$PROJECT_DIR$/styles/styles.css" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/blank/addtask.html" />
         <option value="$PROJECT_DIR$/TodoList/TaskRepository.php" />
         <option value="$PROJECT_DIR$/api.php" />
-        <option value="$PROJECT_DIR$/scripts/tasklist.js" />
+        <option value="$PROJECT_DIR$/scripts/update.js" />
+        <option value="$PROJECT_DIR$/blank/update.html" />
+        <option value="$PROJECT_DIR$/scripts/delete.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/blank/delete.html" />
         <option value="$PROJECT_DIR$/scripts/script.js" />
       </list>
     </option>
@@ -156,7 +149,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -203,8 +195,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todolist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todolistjson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todolist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todolistjson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,6 +240,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -288,11 +310,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -310,9 +332,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -582,65 +604,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blank/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="57" selection-start="1261" selection-end="1261" vertical-scroll-proportion="-0.028619528" vertical-offset="663" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/delete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blank/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="50" selection-start="675" selection-end="675" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/jquery.tools.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="122" selection-start="18618" selection-end="18618" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6137">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blank/task.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="164" selection-end="175" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1518" column="22" selection-start="24675" selection-end="24675" vertical-scroll-proportion="0.6254296" vertical-offset="25442" max-vertical-offset="104907">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="23" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" vertical-offset="910" max-vertical-offset="1598">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="54" selection-start="900" selection-end="900" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
@@ -652,33 +618,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="18" selection-start="744" selection-end="744" vertical-scroll-proportion="4.32" vertical-offset="958" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TodoList/TaskRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="308" selection-end="308" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="2669">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/tasklist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="42" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+        <state line="99" column="0" selection-start="2796" selection-end="2796" vertical-scroll-proportion="-18.923077" vertical-offset="1191" max-vertical-offset="2703">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="582" selection-end="582" vertical-scroll-proportion="0.112794615" vertical-offset="188" max-vertical-offset="782">
+        <state line="45" column="31" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-1.9230769" vertical-offset="715" max-vertical-offset="1309">
           <folding>
             <element signature="e#200#218#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blank/task.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="358" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blank/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="30" selection-start="77" selection-end="77" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="83" selection-start="250" selection-end="250" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blank/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="107" selection-start="193" selection-end="193" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="55" selection-start="1263" selection-end="1263" vertical-scroll-proportion="-0.45714286" vertical-offset="867" max-vertical-offset="1462">
+          <folding />
         </state>
       </provider>
     </entry>

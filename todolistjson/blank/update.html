@@ -1,28 +1,11 @@
-<html>
-    <head>
-        <link href="../styles/styles.css" rel="stylesheet" type="text/css">
-        <link href="../styles/bootstrap.css" rel="stylesheet" type="text/css">
-    </head>
-
-    <body>
-        <header>
-            <h3>Edit task</h3>
-        </header>
-        <div class="task-list">
-            <div class="todo-add">
-                <input type="text" placeholder="Title" id="txt-title"/>
-                <textarea placeholder="Descrtipion" id="txt-desc"></textarea>
-                <input type="text" placeholder="Due Date (dd/mm/yyyy)" id="txt-date"/>
-                <input type="checkbox" id="chk-doen">Done
-                <button class="btn btn-success">Ok</button>
-                <button class="btn">Cancel</button>
-            </div>
-            <div class="todo-task" id="msg-status"></div>
-            <div class="todo-task update-sucsess">Task was updated successfully</div>
-            <div class="todo-task update-error">Error occurred during task updating!</div>
-            <div class="todo-add">
-                <a href="../index.html" class="btn">Back</a>
-            </div>
+<div class="tint">
+    <div class="task-list">
+        <h4>Add new task.</h4>
+        <div iaskd="add-task" class="todo-add">
+            <input type="text" placeholder="Title" class="txt-title"/>
+            <textarea placeholder="Descrtipion" class="txt-desc"></textarea>
+            <input type="text" placeholder="Due Date (dd/mm/yyyy)" id="txt-date"/>
+            <button class="btn btn-success" class="btn-add">Add Task</button>
         </div>
-    </body>
-</html>
+    </div>
+</div>

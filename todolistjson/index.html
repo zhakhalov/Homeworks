@@ -3,7 +3,6 @@
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
         <link href="styles/bootstrap.css" rel="stylesheet" type="text/css">
         <script src="scripts/jquery-1.11.1.min.js" type="text/javascript"></script>
-        <script src="scripts/tasklist.js" type="text/javascript"></script>
         <script src="scripts/script.js" type="text/javascript"></script>
     </head>
     <body>
@@ -11,22 +10,22 @@
             <h3>TODO-List</h3>
         </header>
         <div class="task-list">
+            <h4>Add new task.</h4>
+            <div iaskd="add-task" class="todo-add">
+                <input type="text" placeholder="Title" class="txt-title"/>
+                <textarea placeholder="Descrtipion" class="txt-desc"></textarea>
+                <input type="text" placeholder="Due Date (dd/mm/yyyy)" id="txt-date"/>
+                <button class="btn btn-success" class="btn-add">Add Task</button>
+            </div>
+        </div>
+        <div class="task-list">
             <div class="todo-task">
-                Filter tasks:
-                <select id="filter">
+                Display tasks:
+                <select id="dl-task-type">
                 </select>
             </div>
         </div>
         <div class="task-list" id="tasklist">
-        </div>
-        <div class="task-list">
-            <h4>Add new task.</h4>
-            <div class="todo-add">
-                <input type="text" placeholder="Title"/>
-                <textarea placeholder="Descrtipion"></textarea>
-                <input type="text" placeholder="Due Date (dd/mm/yyyy)"/>
-                <button class="btn btn-success">Add Task</button>
-            </div>
         </div>
         <footer>
         </footer>
