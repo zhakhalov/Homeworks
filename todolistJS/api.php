@@ -10,24 +10,7 @@ use TodoList\TaskRepository;
 
 // reqest vars -------------------------------------------------------------------------------------------------
 
-$issetFilterOption = isset($_POST['options']);
-$issetTasks = isset($_POST['tasks']);
-$issetAdd = isset($_POST['add']);
-$issetDelete = isset($_POST['delete']);
-$issetUpdate = isset($_POST['update']);
-
-if ($issetTasks){
-    $tasks = $_POST['tasks'];
-}
-if ($issetAdd){
-    $add = $_POST['add'];
-}
-if ($issetDelete){
-    $deleteId = $_POST['delete'];
-}
-if ($issetUpdate){
-    $update = $_POST['update'];
-}
+$request = $_POST;
 
 // vars --------------------------------------------------------------------------------------------------------
 
@@ -38,48 +21,101 @@ $dbpass = '';
 
 // -------------------------------------------------------------------------------------------------------------
 
-$taskRepository = new TaskRepository($dbhost, $dbname, $dbuser, $dbpass);
+$handler = new RequestHandler();
 
-if ($issetFilterOption) {
+$handler->dbhost = 'localhost';
+$handler->dbname = 'mytodolist';
+$handler->dbuser = 'root';
+$handler->dbpass = '';
 
-    echo(json_encode([TaskRepository::ALL, TaskRepository::DONE, TaskRepository::OPEN]));
+echo($handler->handle($request));
 
-} else if ($issetTasks) {
 
-    if (TaskRepository::ALL == $tasks){
+class RequestHandler {
 
-        $result = $taskRepository->getAll();
+    public $dbhost = 'localhost';
+    public $dbname = 'mytodolist';
+    public $dbuser = 'root';
+    public $dbpass = '';
 
-    } else {
 
-        $result = $taskRepository->getAllByIsDone(TaskRepository::DONE == $tasks);
-
+    /**
+     * @param $request  request to handle
+     * $request['method'] - function, witch handle current request
+     * $request['params'] - array of request params
+     * @return string JSON results of a $request
+     */
+    public function handle($request){
+        return $this->$request['method']($request['params']);
     }
-    echo(json_encode($result));
 
-} else if ($issetAdd) {
+    /**
+     * @param $params   filter value
+     * $params['tasks'] - filter value
+     * @return string   JSON Array of tasks
+     */
+    function getTasks($params){
+        $taskRepository = new TaskRepository($this->dbhost, $this->dbname, $this->dbuser, $this->dbpass);
+        if (TaskRepository::ALL == $params['tasks']){
+            $result = $taskRepository->getAll();
+        } else {
+            $result = $taskRepository->getAllByIsDone(TaskRepository::DONE == $params['tasks']);
+        }
 
-    $task = new Task();
-    $task->title = $add['title'];
-    $task->description = $add['description'];
-    $task->dueDate = $add['dueDate'];
-    $task->isDone = 0;
+        return json_encode($result);
+    }
 
-    echo(json_encode(['id' => $taskRepository->addTask($task)]));
+    /**
+     * @param $params   empty
+     * @return string   JSON Array of filter options
+     */
+    function getOptions($params){
+        return json_encode([TaskRepository::ALL, TaskRepository::DONE, TaskRepository::OPEN]);
+    }
 
-} else if ($issetUpdate){
-    $task = new Task();
-    $task->id = $update['id'];
-    $task->title = $update['title'];
-    $task->description = $update['description'];
-    $task->dueDate = $update['dueDate'];
-    $task->isDone = $update['isDone'];
+    /**
+     * @param $params   task to add to repository
+     * @return string   {id:}   added task id
+     */
+    function addTask($params){
+        $taskRepository = new TaskRepository($this->dbhost, $this->dbname, $this->dbuser, $this->dbpass);
 
-    $taskRepository->updateTask($task);
+        $task = new Task();
+        $task->title = $params['task']['title'];
+        $task->description = $params['task']['description'];
+        $task->dueDate = $params['task']['dueDate'];
+        $task->isDone = 0;
 
-    echo(json_encode($task));
-} else if($issetDelete) {
+        return json_encode(['id' => $taskRepository->addTask($task)]);
+    }
 
-    echo(json_encode(['success' => $taskRepository->removeTask($deleteId), 'id' => $deleteId]));
+    /**
+     * @param $params   deleted task id
+     * $params['id']    deleted task id
+     * @return string   {id:} deleted task id
+     */
+    function deleteTask($params){
+        $taskRepository = new TaskRepository($this->dbhost, $this->dbname, $this->dbuser, $this->dbpass);
+        return json_encode(['success' => $taskRepository->removeTask($params['id']), 'id' => $params['id']]);
+    }
 
+    /**
+     * @param $params   task to update
+     * $params['task']  task to update
+     * @return string   JSON updated task
+     */
+    function updateTask($params){
+        $taskRepository = new TaskRepository($this->dbhost, $this->dbname, $this->dbuser, $this->dbpass);
+
+        $task = new Task();
+        $task->id = $params['task']['id'];
+        $task->title = $params['task']['title'];
+        $task->description = $params['task']['description'];
+        $task->dueDate = $params['task']['dueDate'];
+        $task->isDone = $params['task']['isDone'];
+
+        $taskRepository->updateTask($task);
+
+        return json_encode($task);
+    }
 }

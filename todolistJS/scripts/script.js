@@ -8,21 +8,21 @@ $(function () {
     };
 
     configAddTask();
-    callOptions();
-    callDeleteElement();
-    callUpdateElement();
+    requestOptions();
+    requestDeleteElement();
+    requestUpdateElement();
 
-    function callOptions(){
+    function requestOptions(){
         $.ajax({
             url: "api.php",
             type: "POST",
             dataType: "json",
-            data: {options: ""},
+            data: {method: "getOptions", params : {options:""}},
             success: onOptionsResponse
         });
     }
 
-    function callDeleteElement(){
+    function requestDeleteElement(){
         $.ajax({
             url: "blank/delete.html",
             type: "POST",
@@ -30,7 +30,7 @@ $(function () {
         });
     }
 
-    function callUpdateElement(){
+    function requestUpdateElement(){
         $.ajax({
             url: "blank/update.html",
             type: "POST",
@@ -38,7 +38,7 @@ $(function () {
         });
     }
 
-    function callTaskElement(){
+    function requestTaskElement(){
         $.ajax({
             url: "blank/task.html",
             type: "POST",
@@ -46,12 +46,12 @@ $(function () {
         });
     }
 
-    function callTasks(){
+    function requestTasks(){
         $.ajax({
             url: "api.php",
             type: "POST",
             dataType: "json",
-            data: { tasks: $("#dl-task-type").val() },
+            data: { method:"getTasks", params:{ tasks: $("#dl-task-type").val() } },
             success: onTasksResponse
         });
     }
@@ -66,21 +66,21 @@ $(function () {
             isDone: false
         };
 
-        $(".txt-title", $add).on("input", function(){                   // on $add-title change
+        $(".txt-title", $add).on("input", function(){                       // on $add-title change
             $(this).css("background", "white");
         });
 
-        $(".txt-date", $add).on("input", function(){                    // on $add-date change
+        $(".txt-date", $add).on("input", function(){                        // on $add-date change
             $(this).css("background", "white");
         });
 
         $(".txt-date", $add).datepicker({ dateFormat: 'dd/mm/yy' });
 
-        $(".txt-desc", $add).on("input", function(){                    // on $add-desc change
+        $(".txt-desc", $add).on("input", function(){                        // on $add-desc change
             $(this).css("background", "white");
         });
 
-        $(".btn-add", $add).on("click", function(){                     // on $add-button click
+        $(".btn-add", $add).on("click", function(){                         // on $add-button click
             task.title = $(".txt-title", $add).val();
             task.description = $(".txt-desc", $add).val();
             task.dueDate = $(".txt-date", $add).val();
@@ -108,7 +108,7 @@ $(function () {
                 url: "api.php",
                 type: "POST",
                 dataType: "json",
-                data: {add: task},
+                data: {method: "addTask", params:{task: task}},
                 success: function(response){
                     task.id = response.id;
                     appendTask(task);
@@ -138,7 +138,7 @@ $(function () {
         });
 
         cache.$update.fadeIn();
-        $(".accept", cache.$update).on("click", function () {           // on $update accept click
+        $(".accept", cache.$update).on("click", function () {                   // on $update accept click
 
             var isValid = true;
 
@@ -168,9 +168,9 @@ $(function () {
                 url: "api.php",
                 type: "POST",
                 dataType: "json",
-                data: {update: task},
-                success: function(response){                            // on update response
-                    setTaskElement($task, task);
+                data: { method:"updateTask", params:{task: task} },
+                success: function(response){                                            // on update response
+                    setTaskElement($task, response);
                     $(".accept", cache.$update).off();
                     cache.$update.fadeOut();
                 }
@@ -187,9 +187,9 @@ $(function () {
                     .text(entry));
         });
         $("#dl-task-type").on("change", function () {                       // on $task filter change
-            callTasks();
+            requestTasks();
         });
-        callTaskElement();
+        requestTaskElement();
     }
 
     function onDeleteElementResponce(response){
@@ -212,7 +212,7 @@ $(function () {
 
     function onTaskElementResponse(response){
         cache.$task = $(response);
-        callTasks();
+        requestTasks();
     }
 
     function onTasksResponse(response){
