@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="web:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_war</output-path>
+    <root id="archive" name="web_war.war">
+      <element id="artifact" artifact-name="web:war exploded" />
+      <element id="javaee-facet-resources" facet="spring-cv-builder/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spring-cv-builder" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="spring-mvc-4.1.6.RELEASE" />
+          <element id="library" level="project" name="spring-batch-2.2.6" />
+          <element id="library" level="project" name="spring-data-jpa-1.3.3" />
+          <element id="library" level="project" name="spring-security-3.2.5" />
+          <element id="library" level="project" name="spring-ws-2.0.2" />
+          <element id="library" level="project" name="spring-integration-4.0.3" />
+          <element id="library" level="project" name="spring-4.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.3.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.mongodb.morphia:morphia:0.108" />
+          <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:2.12.2" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="spring-cv-builder/web/Web" />
+    </root>
+  </artifact>
+</component>
