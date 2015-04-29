@@ -1,0 +1,24 @@
+{
+  "name": "angular-js-demo",
+  "version": "0.0.0",
+  "description": "A simple AngularJS demo app with ExpressJS server side.",
+  "main": "server.js",
+  "repository": "http://git.git",
+  "author": "_monolith <monolith1143@gmail.com>",
+  "dependencies": {
+    "body-parser": "^1.8.4",
+    "cookie-parser": "^1.3.4",
+    "debug": "^2.0.0",
+    "express": "^4.9.8",
+    "express-session": "^1.10.4",
+    "method-override": "^2.3.2",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.0.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-uglify": "^0.9.1"
+  }
+}
